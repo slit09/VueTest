@@ -1,15 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<Card
+view="true"
+ descr="сигма"
+foto="https://i.ytimg.com/vi/5A-0vLMDq2Y/maxresdefault.jpg"
+ msg="чипи чипи чапа чапа руви руви рава рава бум бум бум"/>
+<Card
+view="true"
+foto="https://i.ytimg.com/vi/5A-0vLMDq2Y/maxresdefault.jpg"
+msg="шкиби туалет ор крипер"
+descr="сигма близнец"/>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Card from './components/Card.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Card
   }
 }
 </script>
