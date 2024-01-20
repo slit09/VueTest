@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
-    наш текст
-    <button type="button" class="btn btn-primary">Primary</button>
+privet andreq
 
   </div>
 </template>
