@@ -1,19 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+  <h1> Тест Emit и Provide</h1>
+    <Card/>
+    <div class="rows"></div>
+    <button v-on:click="addAnimal" type="button" class="btn btn-primary">Primary</button>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Card from './components/card.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Card
+  },
+  provide:{
+    animal:"слон"
+  },
+  methods:{
+    addAnimal(){
+      this.animal = 2
+    }
   }
 }
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
